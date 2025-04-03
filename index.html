@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charan Lokku - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Lightbox.css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Background styling */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('assets/backgrounds/tech-bg.jpg') center/cover no-repeat;
+      z-index: -1;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Container -->
+  <div class="background-container"></div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Profile Picture -->
+        <div class="col-md-4 text-md-start text-center">
+          <div class="profile-picture animate__animated animate__fadeIn">
+            <img src="assets/profile.jpg" alt="Charan Lokku" class="img-fluid rounded-circle">
+          </div>
+        </div>
+  
+        <!-- Name and Description -->
+        <div class="col-md-8 text-center text-md-start">
+          <h1 class="animate__animated animate__fadeInDown">Charan Lokku</h1>
+          <p class="animate__animated animate__fadeInUp">Data Engineer | Big Data Enthusiast | Machine Learning Practitioner</p>
+        </div>
+      </div>
+  
+      <!-- About Me Information -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8 text-center">
+          <p class="about-me-text animate__animated animate__fadeIn">
+            Data Engineer passionate about building scalable data solutions and real-time analytics. Skilled in Python, SQL, and big data technologies like Apache Spark, Kafka, and Airflow, I thrive on designing efficient ETL pipelines, optimizing data workflows, and enabling seamless data-driven decision-making. From processing real-time streaming data to structuring large-scale databases, I love solving complex data challenges and turning raw information into actionable insights. Always eager to explore new technologies and tackle the next big data challenge!
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="text-center">
+        <i class="fas fa-briefcase"></i> Experience
+      </h2>
+
+      <!-- WinWinLabs Experience -->
+      <div class="experience-item">
+        <h3>Data Engineer</h3>
+        <p><strong>WinWinLabs</strong> | Feb 2025 - Present</p>
+        <ul>
+          <li>Developed and maintained ETL pipelines for seamless data extraction, transformation, and loading.</li>
+          <li>Processed large-scale datasets using Apache Spark and Hadoop for real-time analytics.</li>
+          <li>Optimized SQL and NoSQL databases for efficient data storage and retrieval.</li>
+        </ul>
+      </div>
+
+      <!-- KPMG Internship -->
+      <div class="experience-item">
+        <h3>Data Analytics Consulting Intern</h3>
+        <p><strong>KPMG (Forage Virtual Internship)</strong> | Apr 2021 - Jun 2021</p>
+        <ul>
+          <li>Conducted customer segmentation and predictive analysis to assess purchasing behavior, loyalty, and churn risks.</li>
+          <li>Used SQL for data extraction and cleansing and Python for preprocessing, handling missing values, and ensuring data accuracy.</li>
+          <li>Implemented RFM analysis and quantile-based ranking to classify customers for targeted marketing and retention.</li>
+          <li>Built a churn prediction model using machine learning to identify at-risk customers.</li>
+          <li>Developed Tableau and Power BI dashboards to visualize trends, industry-specific purchases, and regional spending, driving data-driven decisions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            <i class="fas fa-project-diagram"></i> Projects
+        </h2>
+
+        <div class="row">
+            <!-- Stock Price Prediction -->
+            <div class="col-lg-6 mb-4">
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <a href="assets/projects/stock-prediction.jpg" data-lightbox="project-gallery" data-title="Stock Price Prediction">
+                            <img src="assets/projects/stock-prediction.jpg" alt="Stock Prediction" class="project-thumbnail">
+                            <div class="img-hover-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Stock Price Prediction Using ARIMA and PySpark</h3>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Apr 2024 - May 2024</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Richardson, Texas</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline-primary btn-sm" onclick="showProjectDetails('stock-details')">
+                                <i class="fas fa-info-circle"></i> View Details
+                            </button>
+                            <a href="https://github.com/charanlokku15/Big-Data-Management/tree/main/Stock%20price%20prediction%20using%20ARIMA%20and%20PySpark" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-Time News Data Pipeline -->
+            <div class="col-lg-6 mb-4">
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <a href="assets/projects/news-pipeline.jpg" data-lightbox="project-gallery" data-title="News Data Pipeline">
+                            <img src="assets/projects/news-pipeline.jpg" alt="News Pipeline" class="project-thumbnail">
+                            <div class="img-hover-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Real-Time News Data Pipeline Using Kafka, Spark Streaming, and ELK</h3>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Apr 2024</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline-primary btn-sm" onclick="showProjectDetails('news-details')">
+                                <i class="fas fa-info-circle"></i> View Details
+                            </button>
+                            <a href="https://github.com/charanlokku15/Big-Data-Management/tree/main/Real-Time%20News%20Data%20Pipeline%20Using%20Kafka%2C%20Spark%20Streaming%2C%20and%20ELK" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analyzing Social Networks -->
+            <div class="col-lg-6 mb-4">
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <a href="assets/projects/social-network.jpg" data-lightbox="project-gallery" data-title="Social Network Analysis">
+                            <img src="assets/projects/social-network.jpg" alt="Social Network" class="project-thumbnail">
+                            <div class="img-hover-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Analyzing Social Networks Using GraphX/Graph Frame</h3>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Mar 2024</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline-primary btn-sm" onclick="showProjectDetails('social-details')">
+                                <i class="fas fa-info-circle"></i> View Details
+                            </button>
+                            <a href="https://github.com/charanlokku15/Big-Data-Management/tree/main/Analyzing%20Social%20Networks%20Using%20GraphX%20%26%20Graph%20Frame" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Crawling & NLP-Based Chatbot -->
+            <div class="col-lg-6 mb-4">
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <a href="assets/projects/chatbot.jpg" data-lightbox="project-gallery" data-title="NLP Chatbot">
+                            <img src="assets/projects/chatbot.jpg" alt="NLP Chatbot" class="project-thumbnail">
+                            <div class="img-hover-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Web Crawling & NLP-Based Chatbot for Personalized Information Retrieval</h3>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Feb 2024 - Mar 2024</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline-primary btn-sm" onclick="showProjectDetails('chatbot-details')">
+                                <i class="fas fa-info-circle"></i> View Details
+                            </button>
+                            <a href="https://github.com/charanlokku15/chatbot/tree/main" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Details Modals -->
+        <div id="stock-details" class="project-details-modal">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeProjectDetails()" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3>Stock Price Prediction Using ARIMA and PySpark</h3>
+                <ul class="project-bullets">
+                    <li>Processed large-scale stock data using Spark, handling missing values, and normalizing timestamps.</li>
+                    <li>Performed EDA and stationarity testing with Spark Data Frame operations and the ADF test for ARIMA suitability.</li>
+                    <li>Implemented ARIMA, optimizing p, d, q parameters and applying time-series decomposition for trend analysis.</li>
+                    <li>Trained and validated predictions using MAE and RMSE, ensuring forecasting accuracy.</li>
+                    <li>Visualized stock trends with Matplotlib and Seaborn and optimized performance using Spark's distributed computing.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="news-details" class="project-details-modal">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeProjectDetails()" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3>Real-Time News Data Pipeline Using Kafka, Spark Streaming, and ELK</h3>
+                <ul class="project-bullets">
+                    <li>Ingested real-time news data from NewsAPI, filtering articles by keywords, sources, language, and time, and streamed them into Kafka for real-time processing.</li>
+                    <li>Processed real-time data using PySpark and Spark Streaming, applying filtering, aggregation, and Named Entity Recognition for entity extraction.</li>
+                    <li>Indexed processed data in Elasticsearch, utilizing Logstash for structured ingestion and enabling efficient search and analytics.</li>
+                    <li>Designed Kibana dashboards to visualize top named entities and real-time trends, tracking mentions at 15, 30, 45, and 60-minute intervals.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="social-details" class="project-details-modal">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeProjectDetails()" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3>Analyzing Social Networks Using GraphX/Graph Frame</h3>
+                <ul class="project-bullets">
+                    <li>Conducted graph-based computations and analyses using GraphX/Graph Frame in PySpark, identifying key nodes, calculating PageRank, and finding largest components.</li>
+                    <li>Provided insights into social network structure, demonstrating proficiency in distributed computing and data analysis for decision-making.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="chatbot-details" class="project-details-modal">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeProjectDetails()" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3>Web Crawling & NLP-Based Chatbot for Personalized Information Retrieval</h3>
+                <ul class="project-bullets">
+                    <li>Developed a web crawler using Beautiful Soup with URL filtering and error handling for structured data extraction.</li>
+                    <li>Processed text with NLTK and applied TF-IDF (sklearn) to build a structured knowledge base stored as a pickle file.</li>
+                    <li>Built a chatbot with NLP tokenization, rule-based query matching, and a user model for personalized responses.</li>
+                    <li>Implemented fallback mechanisms for unrecognized queries to enhance engagement.</li>
+                    <li>Utilized Python, Beautiful Soup, Requests, NLTK, Scikit-learn, Pandas, and Pickle for development.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal-overlay" onclick="closeProjectDetails()"></div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="text-center">
+        <i class="fas fa-tools"></i> Skills
+      </h2>
+
+      <!-- Programming Languages -->
+      <div class="skills-category">
+        <h3>Programming Languages</h3>
+        <ul class="skills-list">
+          <li class="python"><i class="fab fa-python"></i> Python</li>
+          <li class="sql"><i class="fas fa-database"></i> SQL</li>
+          <li class="r"><i class="fab fa-r-project"></i> R</li>
+        </ul>
+      </div>
+
+      <!-- Tools & Technologies -->
+      <div class="skills-category">
+        <h3>Tools & Technologies</h3>
+        <ul class="skills-list">
+          <li class="spark"><i class="fas fa-bolt"></i> Apache Spark</li>
+          <li class="hadoop"><i class="fas fa-server"></i> Hadoop</li>
+          <li class="kafka"><i class="fas fa-stream"></i> Kafka</li>
+          <li class="docker"><i class="fab fa-docker"></i> Docker</li>
+          <li class="numpy"><i class="fas fa-cube"></i> NumPy</li>
+          <li class="pandas"><i class="fas fa-table"></i> Pandas</li>
+          <li class="databricks"><i class="fas fa-cloud"></i> Databricks</li>
+          <li class="aws"><i class="fab fa-aws"></i> AWS</li>
+          <li class="mysql"><i class="fas fa-database"></i> MySQL</li>
+          <li class="mongodb"><i class="fas fa-database"></i> MongoDB</li>
+          <li class="tableau"><i class="fas fa-chart-bar"></i> Tableau</li>
+          <li class="powerbi"><i class="fas fa-chart-line"></i> Power BI</li>
+          <li class="git"><i class="fab fa-git"></i> Git</li>
+          <li class="airflow"><i class="fas fa-wind"></i> Apache Airflow</li>
+          <li class="snowflake"><i class="fas fa-snowflake"></i> Snowflake</li>
+          <li class="matplotlib"><i class="fas fa-chart-area"></i> Matplotlib</li>
+          <li class="seaborn"><i class="fas fa-chart-pie"></i> Seaborn</li>
+          <li class="vcs"><i class="fas fa-code-branch"></i> Version Control</li>
+          <li class="nosql"><i class="fas fa-database"></i> NoSQL Databases</li>
+        </ul>
+      </div>
+
+      <!-- Big Data Skills -->
+      <div class="skills-category">
+        <h3>Big Data Skills</h3>
+        <ul class="skills-list">
+          <li class="realtime"><i class="fas fa-clock"></i> Real-Time Processing</li>
+          <li class="etl"><i class="fas fa-exchange-alt"></i> ETL Workflows</li>
+          <li class="warehouse"><i class="fas fa-warehouse"></i> Data Warehousing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="text-center">
+        <i class="fas fa-graduation-cap"></i> Education
+      </h2>
+  
+      <!-- Master's Degree -->
+      <div class="education-item">
+        <div class="d-flex align-items-center">
+          <img src="assets/logos/utd-logo.png" alt="University of Texas at Dallas Logo" class="logo me-3">
+          <div>
+            <h3>Master of Science, Computer Science</h3>
+            <p><strong>The University of Texas at Dallas</strong> | Jan 2023 - Dec 2024</p>
+            <div class="courses-section">
+              <h5>Relevant Coursework:</h5>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Big Data Management and Analytics</li>
+                    <li>Database Design</li>
+                    <li>Machine Learning</li>
+                    <li>Statistical Methods for Data Science</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Web Programming Languages</li>
+                    <li>Design and Analysis of Algorithms</li>
+                    <li>Computer Architecture</li>
+                    <li>Natural Language Processing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Bachelor's Degree -->
+      <div class="education-item">
+        <div class="d-flex align-items-center">
+          <img src="assets/logos/srm-logo.png" alt="SRM Institute of Science & Technology Logo" class="logo me-3">
+          <div>
+            <h3>Bachelor of Technology, Computer Science and Engineering</h3>
+            <p><strong>SRM Institute of Science & Technology</strong> | Jul 2018 - May 2022</p>
+            <div class="courses-section">
+              <h5>Relevant Coursework:</h5>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Database Management Systems</li>
+                    <li>Operating Systems</li>
+                    <li>Computer Networks</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Data Mining</li>
+                    <li>Software Engineering</li>
+                    <li>Object-Oriented Programming</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Certifications and Workshops Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="text-center">
+        <i class="fas fa-certificate"></i> Certifications & Workshops
+      </h2>
+      
+      <div class="row">
+        <!-- Data Science with R -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="certification-card h-100">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <a href="assets/certificates/data-science-r.jpg" data-lightbox="certificates" data-title="Data Science with R">
+                  <img src="assets/certificates/data-science-r.jpg" class="certificate-thumbnail img-fluid rounded" alt="Data Science with R Certificate">
+                </a>
+              </div>
+              <h4 class="card-title">Data Science with R</h4>
+              <p class="card-text"><strong>Issued by:</strong> PRAG ROBOTICS (Approved by SRM IST)</p>
+              <p class="card-text"><small class="text-muted">May 2021</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="assets/certificates/data-science-r.jpg" data-lightbox="certificates" data-title="Data Science with R" class="btn btn-sm btn-outline-primary">View</a>
+                <span class="badge bg-info">Data Science</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cognitive Computing with IBM Cloud -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="certification-card h-100">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <a href="assets/certificates/cognitive-computing-ibm.jpg" data-lightbox="certificates" data-title="Cognitive Computing with IBM Cloud">
+                  <img src="assets/certificates/cognitive-computing-ibm.jpg" class="certificate-thumbnail img-fluid rounded" alt="Cognitive Computing Certificate">
+                </a>
+              </div>
+              <h4 class="card-title">Cognitive Computing with IBM Cloud</h4>
+              <p class="card-text"><strong>Issued by:</strong> IBM (Approved by SRM IST)</p>
+              <p class="card-text"><small class="text-muted">Oct 2020</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="assets/certificates/cognitive-computing-ibm.jpg" data-lightbox="certificates" data-title="Cognitive Computing with IBM Cloud" class="btn btn-sm btn-outline-primary">View</a>
+                <span class="badge bg-success">AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Regression Models -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="certification-card h-100">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <a href="assets/certificates/regression-models.jpg" data-lightbox="certificates" data-title="Regression Models">
+                  <img src="assets/certificates/regression-models.jpg" class="certificate-thumbnail img-fluid rounded" alt="Regression Models Certificate">
+                </a>
+              </div>
+              <h4 class="card-title">Regression Models</h4>
+              <p class="card-text"><strong>Issued by:</strong> Johns Hopkins University, Coursera</p>
+              <p class="card-text"><small class="text-muted">Oct 2020</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="assets/certificates/regression-models.jpg" data-lightbox="certificates" data-title="Regression Models" class="btn btn-sm btn-outline-primary">View</a>
+                <span class="badge bg-warning text-dark">Statistics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Statistical Inference -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="certification-card h-100">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <a href="assets/certificates/statistical-inference.jpg" data-lightbox="certificates" data-title="Statistical Inference">
+                  <img src="assets/certificates/statistical-inference.jpg" class="certificate-thumbnail img-fluid rounded" alt="Statistical Inference Certificate">
+                </a>
+              </div>
+              <h4 class="card-title">Statistical Inference</h4>
+              <p class="card-text"><strong>Issued by:</strong> Johns Hopkins University, Coursera</p>
+              <p class="card-text"><small class="text-muted">Oct 2020</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="assets/certificates/statistical-inference.jpg" data-lightbox="certificates" data-title="Statistical Inference" class="btn btn-sm btn-outline-primary">View</a>
+                <span class="badge bg-warning text-dark">Statistics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Exploratory Data Analysis -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="certification-card h-100">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <a href="assets/certificates/exploratory-data-analysis.jpg" data-lightbox="certificates" data-title="Exploratory Data Analysis">
+                  <img src="assets/certificates/exploratory-data-analysis.jpg" class="certificate-thumbnail img-fluid rounded" alt="Exploratory Data Analysis Certificate">
+                </a>
+              </div>
+              <h4 class="card-title">Exploratory Data Analysis</h4>
+              <p class="card-text"><strong>Issued by:</strong> Johns Hopkins University, Coursera</p>
+              <p class="card-text"><small class="text-muted">Aug 2020</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="assets/certificates/exploratory-data-analysis.jpg" data-lightbox="certificates" data-title="Exploratory Data Analysis" class="btn btn-sm btn-outline-primary">View</a>
+                <span class="badge bg-info">Data Analysis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Getting and Cleaning Data -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="certification-card h-100">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <a href="assets/certificates/getting-cleaning-data.jpg" data-lightbox="certificates" data-title="Getting and Cleaning Data">
+                  <img src="assets/certificates/getting-cleaning-data.jpg" class="certificate-thumbnail img-fluid rounded" alt="Getting and Cleaning Data Certificate">
+                </a>
+              </div>
+              <h4 class="card-title">Getting and Cleaning Data</h4>
+              <p class="card-text"><strong>Issued by:</strong> Johns Hopkins University, Coursera</p>
+              <p class="card-text"><small class="text-muted">July 2020</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="assets/certificates/getting-cleaning-data.jpg" data-lightbox="certificates" data-title="Getting and Cleaning Data" class="btn btn-sm btn-outline-primary">View</a>
+                <span class="badge bg-info">Data Wrangling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Machine Learning -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="certification-card h-100">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <a href="assets/certificates/machine-learning.jpg" data-lightbox="certificates" data-title="Machine Learning">
+                  <img src="assets/certificates/machine-learning.jpg" class="certificate-thumbnail img-fluid rounded" alt="Machine Learning Certificate">
+                </a>
+              </div>
+              <h4 class="card-title">Machine Learning</h4>
+              <p class="card-text"><strong>Issued by:</strong> Stanford University, Coursera</p>
+              <p class="card-text"><small class="text-muted">May 2020</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="assets/certificates/machine-learning.jpg" data-lightbox="certificates" data-title="Machine Learning" class="btn btn-sm btn-outline-primary">View</a>
+                <span class="badge bg-success">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Google Cloud Platform Fundamentals -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="certification-card h-100">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <a href="assets/certificates/gcp-fundamentals.jpg" data-lightbox="certificates" data-title="Google Cloud Platform Fundamentals">
+                  <img src="assets/certificates/gcp-fundamentals.jpg" class="certificate-thumbnail img-fluid rounded" alt="GCP Fundamentals Certificate">
+                </a>
+              </div>
+              <h4 class="card-title">Google Cloud Platform Fundamentals</h4>
+              <p class="card-text"><strong>Issued by:</strong> Google Cloud</p>
+              <p class="card-text"><small class="text-muted">Jun 2020</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="assets/certificates/gcp-fundamentals.jpg" data-lightbox="certificates" data-title="Google Cloud Platform Fundamentals" class="btn btn-sm btn-outline-primary">View</a>
+                <span class="badge bg-primary">Cloud Computing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- C & C++ -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="certification-card h-100">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <a href="assets/certificates/c-cpp.jpg" data-lightbox="certificates" data-title="C & C++">
+                  <img src="assets/certificates/c-cpp.jpg" class="certificate-thumbnail img-fluid rounded" alt="C & C++ Certificate">
+                </a>
+              </div>
+              <h4 class="card-title">C & C++ Programming</h4>
+              <p class="card-text"><strong>Issued by:</strong> SRM AXIS INTELLECTS</p>
+              <p class="card-text"><small class="text-muted">March 2019</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="assets/certificates/c-cpp.jpg" data-lightbox="certificates" data-title="C & C++" class="btn btn-sm btn-outline-primary">View</a>
+                <span class="badge bg-secondary">Programming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Publications Section -->
+  <section id="research" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">
+        <i class="fas fa-flask"></i> Research & Publications
+      </h2>
+  
+      <div class="research-container">
+        <!-- Research Publication Card -->
+        <div class="research-item">
+          <div class="research-content">
+            <h3>Classification of Genuinity in Job Posting using Machine Learning</h3>
+            <div class="publication-details">
+              <p><strong>Journal:</strong> International Journal for Research in Applied Science & Engineering Technology (IJRASET)</p>
+              <p><strong>Published:</strong> December 2021</p>
+            </div>
+            <div class="research-description">
+              <h4>Key Contributions:</h4>
+              <ul>
+                <li>Designed a machine learning model to identify fake job postings using NLP and TF-IDF for feature extraction</li>
+                <li>Applied SMOTE to balance the dataset and implemented a Random Forest classifier</li>
+                <li>Provides a practical solution to protect job seekers from fraudulent postings</li>
+              </ul>
+            </div>
+            <div class="research-links">
+              <a href="https://www.ijraset.com/best-journal/classification-of-genuinity-in-job-posting-using-machine-learning" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fas fa-external-link-alt"></i> Read Full Paper
+              </a>
+            </div>
+          </div>
+          
+          <div class="research-certificate">
+            <div class="certificate-container">
+              <a href="assets/certificates/research-certificate.jpg" data-lightbox="research" data-title="Publication Certificate">
+                <img src="assets/certificates/research-certificate.jpg" alt="Research Publication Certificate" class="certificate-img">
+                <div class="certificate-overlay">
+                  <i class="fas fa-search-plus"></i> View Certificate
+                </div>
+              </a>
+            </div>
+            <p class="text-center mt-2"><small>Click to view certificate</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Info Section -->
+<section id="contact" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">
+        <i class="fas fa-envelope"></i> Contact
+      </h2>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-card p-4 p-md-5">
+            <div class="row">
+              <!-- Contact Information -->
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class="contact-info-item d-flex align-items-center mb-4">
+                  <div class="icon-box me-3">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-0">Email</h5>
+                    <a href="mailto:cxl220029@utdallas.edu" class="text-dark">cxl220029@utdallas.edu</a>
+                  </div>
+                </div>
+                
+                <div class="contact-info-item d-flex align-items-center mb-4">
+                  <div class="icon-box me-3">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-0">Phone</h5>
+                    <a href="tel:+14695580098" class="text-dark">+1 (469) 558-0098</a>
+                  </div>
+                </div>
+                
+                <div class="contact-info-item d-flex align-items-center">
+                  <div class="icon-box me-3">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-0">Location</h5>
+                    <p class="mb-0 text-dark">Richardson, Texas</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Social Links -->
+              <div class="col-md-6">
+                <div class="social-links-section">
+                  <h5 class="text-center mb-4">Connect With Me</h5>
+                  <div class="d-flex justify-content-center flex-wrap">
+                    <a href="https://www.linkedin.com/in/charan-lokku-0aa82a18a/" target="_blank" rel="noopener noreferrer" class="social-icon linkedin mx-2 mb-3">
+                      <i class="fab fa-linkedin-in me-2"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/cherrylokku-07" target="_blank" rel="noopener noreferrer" class="social-icon github mx-2 mb-3">
+                      <i class="fab fa-github me-2"></i> GitHub
+                    </a>
+                    <a href="#" class="social-icon twitter mx-2 mb-3">
+                      <i class="fab fa-twitter me-2"></i> Twitter
+                    </a>
+                    <a href="#" class="social-icon medium mx-2 mb-3">
+                      <i class="fab fa-medium-m me-2"></i> Medium
+                    </a>
+                  </div>
+                  
+                  <!-- Contact Form Button -->
+                  <div class="text-center mt-3">
+                    <button type="button" class="btn btn-primary btn-contact" data-bs-toggle="modal" data-bs-target="#contactFormModal">
+                      <i class="fas fa-paper-plane me-2"></i> Send Message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Form Modal -->
+  <div class="modal fade" id="contactFormModal" tabindex="-1" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactFormModalLabel">Send Me a Message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              <i class="fas fa-paper-plane me-2"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section">
+    <div class="container">
+      <h2 class="text-center">
+        <i class="fas fa-file-download"></i> Resume
+      </h2>
+      <div class="text-center">
+        <a href="assets/resume/charan-lokku-resume.pdf" class="btn btn-primary" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <p>&copy; 2024 Charan Lokku. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Lightbox.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
