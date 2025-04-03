@@ -92,17 +92,29 @@
       <h2 class="text-center">
         <i class="fas fa-briefcase"></i> Experience
       </h2>
-
-      <!-- WinWinLabs Experience -->
-      <div class="experience-item">
-        <h3>Data Engineer</h3>
-        <p><strong>WinWinLabs</strong> | Feb 2025 - Present</p>
-        <ul>
-          <li>Developed and maintained ETL pipelines for seamless data extraction, transformation, and loading.</li>
-          <li>Processed large-scale datasets using Apache Spark and Hadoop for real-time analytics.</li>
-          <li>Optimized SQL and NoSQL databases for efficient data storage and retrieval.</li>
-        </ul>
-      </div>
+      
+<!-- WinWinLabs Experience -->
+<div class="experience-item">
+  <h3>Data Engineer</h3>
+  <p><strong>WinWinLabs</strong> | Feb 2025 - Present</p>
+  <ul>
+    <li>Developing Kafka-based data pipeline to ingest and process sensor data (vibration, temperature) from 50+ CNC machines, implementing fault-tolerant producers/consumers in Python.</li>
+    <li>Building stream processing logic using Faust (Python) to:
+      <ul>
+        <li>Clean and normalize raw sensor data (noise filtering, outlier handling)</li>
+        <li>Calculate rolling statistical features (5-second windows) for anomaly detection</li>
+      </ul>
+    </li>
+    <li>Designing time-series database schema in TimescaleDB, including:
+      <ul>
+        <li>Hypertable partitioning by machine ID and timestamp</li>
+        <li>Retention policies for raw vs. processed data</li>
+      </ul>
+    </li>
+    <li>Implementing real-time alerting system with Slack integration for critical anomalies.</li>
+    <li>Collaborating with ML team to integrate TensorFlow Lite models for failure prediction.</li>
+  </ul>
+</div>
 
       <!-- KPMG Internship -->
       <div class="experience-item">
